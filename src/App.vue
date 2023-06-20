@@ -21,7 +21,7 @@ export default {
     return {
       routes: [{
         to: 'home',
-        title: 'О нас'
+        title: 'О компании'
       },
       {
         to: 'products',
