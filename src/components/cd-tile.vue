@@ -1,6 +1,6 @@
 <template>
   <div class="cd-tile bg-gradient">
-    <div class="cd-tile--content m-3 p-3 border">
+    <div class="cd-tile--content m-3 p-3">
       <slot></slot>
     </div>
   </div>
