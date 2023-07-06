@@ -1,6 +1,6 @@
 <template>
   <cd-tile>
-    <div class="nav justify-content-around">
+    <div class="nav justify-content-around" :class="{ 'root-apps-list' : isroot }">
       <router-link v-for="route in apps" :key="route.to" :to="{ name: route.to }" :class="{ 'root-app': isroot }">
         <div class="app-title menu-item" :class="{ 'selected': iscurrent(route) }" >
           <div :class="{ 'bg-secondary text-white': isroot}">
@@ -59,5 +59,7 @@ export default {
   }
   .hidden {
     display: none;
+  }
+  .root-apps-list {
   }
 </style>

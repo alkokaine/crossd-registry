@@ -2,7 +2,7 @@
   <cd-tile>
     <div class="app-info">
       <div class="p-2 m-2">
-        <div class="d-flex flex-nowrap flex-row">
+        <div class="flex-nowrap flex-row">
           <div class="app-icon p-3">
             <img :src="$route.meta.icon"/>
           </div>
