@@ -15,5 +15,7 @@
   .cd-tile {
     min-height: 70vmin;
     max-height: 80vmin;
+    display: grid;
+    align-content: center !important;
   }
 </style>
