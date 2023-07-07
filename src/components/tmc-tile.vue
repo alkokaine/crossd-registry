@@ -2,7 +2,7 @@
   <app-tile content-class="row-cols-2">
     <div class="row-col">
       <div class="h5">Возможности</div>
-      <div>
+      <div class="module_item_content">
         <p>Ведение документов прихода и расхода материальных ценностей</p>
         <p>Выгрузка данных в "1С: Бухгалтерия"</p>
         <p>Проведение инвентаризаций</p>
@@ -11,7 +11,7 @@
     </div>
     <div class="row-col">
       <div class="h5">Рабочие места</div>
-      <div>
+      <div class="module_item_content">
         <p>Руководитель</p>
         <p>Исполнитель</p>
         <p>Бухгалтер централизованной бухгалтерии</p>
