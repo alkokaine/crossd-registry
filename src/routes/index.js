@@ -27,7 +27,8 @@ const routes = [
                 meta: {
                     name: 'Учёт численности',
                     description: 'Автоматизация учёта контингента в образовательных учреждениях',
-                    icon: require('../assets/product-numb-big.svg')
+                    icon: require('../assets/product-numb-big.svg'),
+                    path: 'https://count.cross-d.ru',
                 }
             },
             {
@@ -37,7 +38,8 @@ const routes = [
                 meta: {
                     name: 'Учёт содержания недвижимости',
                     description: 'Автоматизация учёта объектов недвижимого имущества (ОНИ), планового и капитального ремонта',
-                    icon: require('../assets/product-build-big.svg')
+                    icon: require('../assets/product-build-big.svg'),
+                    path: 'https://repair.cross-d.ru',
                 }
             },
             {
@@ -47,7 +49,8 @@ const routes = [
                 meta: {
                     name: 'Учёт товарно-материальных ценностей',
                     description: 'Автоматизация учёта ТМЦ учреждения образования',
-                    icon: require('../assets/product-tmc-big.svg')
+                    icon: require('../assets/product-tmc-big.svg'),
+                    path: 'https://material.cross-d.ru'
                 }
             }
         ]

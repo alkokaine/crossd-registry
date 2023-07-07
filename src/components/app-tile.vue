@@ -16,6 +16,9 @@
       <div class="row w-100 text-start" :class="contentClass">
         <slot></slot>
       </div>
+      <div class="text-end">
+        <a :href="$route.meta.path" class="btn btn-primary" target="_blank">Перейти</a>
+      </div>
     </div>
   </cd-tile>
 </template>
