@@ -1,6 +1,6 @@
 <template>
-  <div class="cd-tile bg-gradient">
-    <div class="cd-tile--content m-3 p-3">
+  <div class="cd-tile">
+    <div class="cd-tile--content container my-3">
       <slot></slot>
     </div>
   </div>
@@ -11,3 +11,9 @@
     name: 'cd-tile'
   }
 </script>
+<style>
+  .cd-tile {
+    min-height: 70vmin;
+    max-height: 80vmin;
+  }
+</style>

@@ -1,34 +1,31 @@
 <template>
-  <div id="app" class="w-100">
-    <div class="nav sc">
-      <router-link v-for="route in routes" :key="route.to" :to="{ name: route.to }" class="menu__link r-link text-underlined menu page__custom-settings" :class="{ 'selected': iscurrent(route) }">
+  <div id="app" class="w-100 pt-5">
+    <nav class="navbar fixed-top navbar-dark bg-primary py-0 menu justify-content-center">
+      <router-link class="p-2 nav-item fw-bold text-light" v-for="route in routes" :key="route.to" :to="{ name: route.to }" :class="{ 'active': iscurrent(route) }">
         <div class="p-2">
           <span>{{ route.title }}</span>
         </div>
       </router-link>
-    </div>
-    <div class="mx-3 box">
+    </nav>
+    <div class="container p-3">
       <router-view></router-view>
-    </div> 
-    <div class="footer">
-<div>
-    <ul class="rw">
-                <li>
-                    <img class="footer_img" src="" />8-8152-55 03 61
-                </li>
-                <li>
-                    <img class="footer_img" src="" />www.cross-d.ru
-                </li>
-                <li>
-                    <img class="footer_img" src="" />info@cross-d.ru
-                </li>
-                <li>
-                    <img class="footer_img" src="" />г. Мурманск,
-                    ул. Челюскинцев, д.7
-                </li>
-            </ul>
-</div>
-</div>
+    </div>
+    <div class="fixed-bottom bg-primary">
+      <ul class="rw">
+        <li>
+            <img class="footer_img" src="" />8-8152-55 03 61
+        </li>
+        <li>
+            <img class="footer_img" src="" />www.cross-d.ru
+        </li>
+        <li>
+            <img class="footer_img" src="" />info@cross-d.ru
+        </li>
+        <li>
+            <img class="footer_img" src="" />г. Мурманск, ул. Челюскинцев, д.7
+        </li>
+      </ul>
+    </div>
   </div>
 
 </template>
@@ -88,40 +85,20 @@ export default {
 
   a {
     text-decoration: none;
+    font-weight: normal;;
   }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-.menu-item {
-  font-weight: bold;
-  background:gray;
-}
-
-
 .menu-item.selected {
   background: #2478d8;
   color: white;
-  box-shadow: 0 0 10px 5px gray;
+  /* box-shadow: 0 0 10px 5px gray; */
   border-bottom-left-radius: 63px;
-}
-
-.box {
-  margin: 10rem auto;
-   padding: 2ch;
-  position: relative;
-  border-image: 
-    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H8v4H4v4H0v8h4v4h4v4h8v-4h4v-4h4V8h-4V4h-4V0zm0 4v4h4v8h-4v4H8v-4H4V8h4V4h8z' fill='%230038FF'/%3E%3C/svg%3E")
-    8 stretch;
-}
-
-.box:before {
-  content: "";
-
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
 }
 
 p {
@@ -134,22 +111,20 @@ p + p {
 
 a {
   color: #ecf0ff;
-  font-weight: bold;
 }
 
 .bg-secondary {
       min-height: 228px;
        background: #2c2c2c !important;
-       width: 444px;
 }
 
 .bg-secondary:hover{
 background: #2478d8 !important;
 }
 
-.border{
+/* .border{
   display: contents;
-}
+} */
 
 .h3, .h5 {
   font-size: 1.25rem;
@@ -223,9 +198,9 @@ CORE STYLES
 =====
 */
 
-.menu{
+/* .menu{
   --rLinkColor: var(--menuLinkColor, currentColor);
-}
+} */
 
 .menu__link{
   display: var(--menuLinkDisplay, block);
@@ -254,10 +229,10 @@ PRESENTATION STYLES
 =====
 */
 
-.menu{
+/* .menu{
   background-color: var(--menuBackgroundColor, #f0f0f0);
   box-shadow: var(--menuBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
-}
+} */
 
 .menu__list{
   display: flex;  
@@ -298,3 +273,6 @@ list-style: none;
 
 </style>
 
+<style scoped>
+
+</style>

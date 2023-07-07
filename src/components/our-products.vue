@@ -1,16 +1,16 @@
 <template>
   <cd-tile>
-    <div class="nav justify-content-around" :class="{ 'root-apps-list' : isroot }">
+    <div class="nav justify-content-around py-2" :class="{ 'root-apps-list' : isroot, 'border-bottom': !isroot }">
       <router-link v-for="route in apps" :key="route.to" :to="{ name: route.to }" :class="{ 'root-app': isroot }">
-        <div class="app-title menu-item" :class="{ 'selected': iscurrent(route) }" >
+        <div class="app-title menu-item" :class="{ 'selected': iscurrent(route), 'text-body' : !iscurrent(route) }" >
           <div :class="{ 'bg-secondary text-white': isroot}">
             <div class="product-image" :class="{ 'hidden': !isroot, 'py-4': isroot }"><img :src="route.img"/></div>
-            <div class="p-2">{{ route.title }}</div>
+            <div class="p-2 px-5">{{ route.title }}</div>
           </div>
         </div>
       </router-link>
     </div>
-    <div class="product-content">
+    <div class="product-content m-2">
       <router-view class="w-auto mx-auto"></router-view>
     </div>
   </cd-tile>

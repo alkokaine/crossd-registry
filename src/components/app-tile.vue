@@ -1,14 +1,14 @@
 <template>
   <cd-tile>
-    <div class="app-info">
+    <div class="app-info my-auto">
       <div class="p-2 m-2">
         <div class="flex-nowrap flex-row">
           <div class="app-icon p-3">
             <img :src="$route.meta.icon"/>
           </div>
           <div class="m-2 text-start">
-            <div class="app-name h3">{{ $route.meta.name }}</div>
-            <div class="app-description h4">{{ $route.meta.description }}</div>
+            <div class="app-name fs-3 fw-bold">{{ $route.meta.name }}</div>
+            <div class="app-description">{{ $route.meta.description }}</div>
           </div>
         </div>
       </div>
